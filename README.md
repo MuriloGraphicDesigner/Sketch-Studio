@@ -1,11 +1,29 @@
-<div align="center">
+# Sketch Studio — Portfólio
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+Landing page estática de portfólio para o **Sketch Studio** (Design Gráfico, Branding, Identidade Visual, Editorial e Ilustração Digital), feita apenas com **HTML, CSS e JavaScript puros** — sem frameworks, sem dependências externas e sem etapa de compilação.
 
-  <h1>Built with AI Studio</h2>
+## Estrutura do projeto
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+- `index.html` — Estrutura completa da landing page e modais
+- `styles.css` — Estilos visuais, responsividade e modo claro/escuro
+- `data.js` — Informações do estúdio, contatos e projetos do portfólio
+- `logic.js` — Regras de filtragem, validação dos formulários e formatação
+- `app.js` — Interatividade (tema, filtros, busca, modais, lightbox e formulários)
+- `assets/` — Imagens, logotipos e PDFs estáticos
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Como publicar no GitHub Pages (sem build)
 
-</div>
+1. Suba os arquivos deste repositório para o GitHub (branch `main` ou `master`).
+2. No GitHub, abra **Settings → Pages**.
+3. Em **Build and deployment**, escolha **Deploy from a branch** (`main` / `(root)`) **ou** selecione **GitHub Actions** (o workflow já está pronto).
+4. Em poucos segundos o site estará no ar!
+
+## Como visualizar localmente
+
+Você pode abrir o `index.html` diretamente no navegador ou iniciar um servidor local com Node.js:
+
+```bash
+npm run dev
+```
+
+Depois acesse `http://localhost:3000`.

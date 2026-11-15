@@ -1,0 +1,960 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sketch Studio — Design Gráfico, Branding &amp; Ilustração</title>
+    <meta
+      name="description"
+      content="Estúdio independente de design gráfico especializado em branding, identidade visual, design editorial e ilustração autoral."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Sketch Studio" />
+    <meta property="og:title" content="Sketch Studio — Design Gráfico, Branding &amp; Ilustração" />
+    <meta
+      property="og:description"
+      content="Transformamos conceitos em experiências visuais autênticas. Design estratégico, identidade visual e criatividade para marcas."
+    />
+    <meta property="og:image" content="./assets/aistudio/Logo_Princiapl_dd8b985e.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sketch Studio — Design Gráfico, Branding &amp; Ilustração" />
+    <meta
+      name="twitter:description"
+      content="Estúdio independente de design gráfico especializado em branding, identidade visual e ilustração."
+    />
+    <meta name="theme-color" content="#003F3F" />
+    <link rel="icon" type="image/png" href="./assets/aistudio/icone_verde_94366711.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script>
+      (function () {
+        try {
+          if (localStorage.getItem('sketch_studio_theme') === 'dark') {
+            document.documentElement.classList.add('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="site-shell">
+      <!-- Header -->
+      <header class="site-header">
+        <div class="container header-inner">
+          <a href="#inicio" class="brand-link" data-scroll-target="inicio" aria-label="Sketch Studio">
+            <img
+              src="./assets/aistudio/icone_verde_94366711.png"
+              alt="Sketch Studio"
+              class="brand-icon light-only"
+            />
+            <img
+              src="./assets/aistudio/icone_branco_48516b97.png"
+              alt="Sketch Studio"
+              class="brand-icon dark-only"
+            />
+            <span class="brand-name">Sketch Studio</span>
+          </a>
+
+          <nav class="main-nav" aria-label="Navegação principal">
+            <a href="#inicio" class="nav-link is-active" data-nav-section="inicio" data-scroll-target="inicio">
+              Início
+            </a>
+            <a href="#portfolio" class="nav-link" data-nav-section="portfolio" data-scroll-target="portfolio">
+              Portfólio
+            </a>
+            <a href="#sobre" class="nav-link" data-nav-section="sobre" data-scroll-target="sobre">
+              Sobre
+            </a>
+            <a href="#contato" class="nav-link" data-nav-section="contato" data-scroll-target="contato">
+              Contato
+            </a>
+          </nav>
+
+          <div class="header-actions">
+            <button
+              type="button"
+              id="theme-toggle"
+              class="icon-btn"
+              aria-label="Ativar modo escuro"
+              title="Alternar tema claro/escuro"
+            >
+              <svg class="icon-svg moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+              </svg>
+              <svg class="icon-svg sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="4" />
+                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+              </svg>
+            </button>
+
+            <a
+              href="#contato"
+              class="btn btn-primary header-cta"
+              data-scroll-target="contato"
+            >
+              Entrar em contato
+            </a>
+
+            <button
+              type="button"
+              id="mobile-menu-btn"
+              class="icon-btn mobile-menu-trigger"
+              aria-label="Abrir menu"
+              aria-expanded="false"
+            >
+              <svg class="icon-svg menu-open-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="4" x2="20" y1="12" y2="12" />
+                <line x1="4" x2="20" y1="6" y2="6" />
+                <line x1="4" x2="20" y1="18" y2="18" />
+              </svg>
+              <svg class="icon-svg menu-close-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 6 6 18" />
+                <path d="m6 6 12 12" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div id="mobile-menu-drawer" class="mobile-drawer" hidden>
+          <div class="container mobile-drawer-inner">
+            <a href="#inicio" class="mobile-nav-link" data-nav-section="inicio" data-scroll-target="inicio">
+              Início
+            </a>
+            <a href="#portfolio" class="mobile-nav-link" data-nav-section="portfolio" data-scroll-target="portfolio">
+              Portfólio
+            </a>
+            <a href="#sobre" class="mobile-nav-link" data-nav-section="sobre" data-scroll-target="sobre">
+              Sobre
+            </a>
+            <a href="#contato" class="mobile-nav-link" data-nav-section="contato" data-scroll-target="contato">
+              Contato
+            </a>
+            <a href="#contato" class="btn btn-primary mobile-drawer-cta" data-scroll-target="contato">
+              Entrar em contato
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <main class="main-content">
+        <!-- Hero (#inicio) -->
+        <section id="inicio" class="hero-section">
+          <div class="container hero-container">
+            <div class="hero-content">
+              <p class="eyebrow">Estúdio independente · Branding, Identidade Visual &amp; Ilustração</p>
+              <h1 class="hero-title">
+                Ideias ganham forma.<br />
+                <span class="hero-highlight">
+                  Marcas ganham identidade.
+                  <svg viewBox="0 0 180 12" fill="none" class="handwritten-stroke" aria-hidden="true">
+                    <path d="M2 8.5C45 3.5 110 2.5 178 7.5" stroke="#D7BC9A" stroke-width="3" stroke-linecap="round" />
+                  </svg>
+                </span>
+              </h1>
+              <p class="hero-subtitle">
+                Transformamos conceitos em experiências visuais autênticas. Design estratégico,
+                identidade visual e criatividade para marcas que desejam se destacar.
+              </p>
+
+              <div class="hero-actions">
+                <a href="#portfolio" class="btn btn-primary btn-lg" data-scroll-target="portfolio">
+                  <span>Conheça nossos projetos</span>
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </a>
+                <a href="#contato" class="btn btn-outline btn-lg" data-scroll-target="contato">
+                  Vamos conversar
+                </a>
+              </div>
+            </div>
+
+            <!-- Studio Manifesto Card -->
+            <div class="manifesto-card">
+              <div class="manifesto-logo-box">
+                <img
+                  src="./assets/aistudio/Logo_Princiapl_dd8b985e.png"
+                  alt="Logotipo principal Sketch Studio — Illustrator &amp; Brand Designer"
+                  class="manifesto-logo light-only"
+                />
+                <img
+                  src="./assets/aistudio/Logo_vertical_branca_c0042eac.png"
+                  alt="Logotipo principal Sketch Studio — Illustrator &amp; Brand Designer"
+                  class="manifesto-logo dark-only"
+                />
+              </div>
+              <div class="manifesto-copy">
+                <div>
+                  <p class="eyebrow">Sobre o Sketch Studio</p>
+                  <h2 class="section-heading">Design com intenção. Criatividade com propósito.</h2>
+                </div>
+                <p class="body-text">
+                  O Sketch Studio acredita que cada marca possui uma identidade própria que merece ser
+                  traduzida visualmente de maneira estratégica, original e significativa.
+                </p>
+                <p class="body-muted">
+                  Unimos pesquisa, esboço autoral e rigor gráfico para construir identidades visuais,
+                  ilustrações e sistemas editoriais que conectam marcas e pessoas com clareza e
+                  personalidade.
+                </p>
+                <div class="pt-xs">
+                  <a href="#sobre" class="inline-link" data-scroll-target="sobre">
+                    <span>Conhecer a história, manual de marca e direção criativa</span>
+                    <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M7 7h10v10" />
+                      <path d="M7 17 17 7" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Portfolio (#portfolio) -->
+        <section id="portfolio" class="section-block">
+          <div class="container">
+            <div class="section-intro">
+              <p class="eyebrow">Acervo &amp; Projetos</p>
+              <h2 class="section-title">Portfólio visual com identidade e direção de arte</h2>
+              <p class="section-desc">
+                Explore os projetos publicados de branding, identidade visual, design gráfico,
+                editorial e ilustração autoral. Clique em qualquer card para abrir a galeria
+                completa.
+              </p>
+            </div>
+
+            <div class="portfolio-toolbar">
+              <div
+                id="portfolio-filters"
+                class="filter-group"
+                role="group"
+                aria-label="Filtrar projetos por categoria"
+              ></div>
+
+              <div class="toolbar-right">
+                <span id="portfolio-count" class="project-count">6 projetos</span>
+                <div class="search-box">
+                  <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="11" cy="11" r="8" />
+                    <path d="m21 21-4.3-4.3" />
+                  </svg>
+                  <input
+                    id="portfolio-search"
+                    type="search"
+                    placeholder="Buscar projeto..."
+                    aria-label="Buscar projetos no portfólio"
+                    class="search-input"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div id="portfolio-empty" class="empty-state" hidden>
+              <p class="empty-title">Nenhum projeto encontrado para esta busca</p>
+              <button type="button" id="portfolio-reset-btn" class="btn btn-primary">
+                Mostrar todos os projetos
+              </button>
+            </div>
+
+            <div id="portfolio-grid" class="portfolio-grid"></div>
+          </div>
+        </section>
+
+        <!-- About (#sobre) -->
+        <section id="sobre" class="section-block section-tinted">
+          <div class="container">
+            <div class="about-intro">
+              <div class="about-headline-col">
+                <p class="eyebrow">Sobre mim &amp; Sketch Studio</p>
+                <h2 class="section-title">
+                  Design autoral para transformar conhecimento criativo em soluções reais
+                </h2>
+                <svg viewBox="0 0 180 12" fill="none" class="handwritten-stroke-sm" aria-hidden="true">
+                  <path d="M2 8.5C45 3.5 110 2.5 178 7.5" stroke="#D7BC9A" stroke-width="3" stroke-linecap="round" />
+                </svg>
+              </div>
+              <div class="about-story-col">
+                <p>
+                  O Sketch Studio nasceu da experiência prática, de projetos desenvolvidos durante a
+                  graduação e da vontade de transformar conhecimento criativo em soluções reais.
+                </p>
+                <p>
+                  Somos especializados em branding e ilustração, com o propósito de desenvolver
+                  identidades visuais autênticas que conectam pessoas e marcas.
+                </p>
+                <p>
+                  Pautados pela transparência, pelo cuidado nos detalhes e pela inovação constante,
+                  entregamos soluções visuais com significado.
+                </p>
+                <p class="story-highlight">
+                  Para nós, cada projeto é uma oportunidade de entregar o essencial com excelência e
+                  propósito.
+                </p>
+              </div>
+            </div>
+
+            <!-- Philosophy, Purpose & Specialties -->
+            <div class="pillars-grid">
+              <div class="pillar-card">
+                <p class="pillar-index">01 · Filosofia</p>
+                <h3 class="pillar-title">Cada marca tem uma voz única</h3>
+                <p class="pillar-text">
+                  Acreditamos que o design não serve apenas para adornar, mas para revelar a
+                  personalidade de um projeto com clareza, consistência e respeito à sua história.
+                </p>
+              </div>
+              <div class="pillar-card pillar-card-dark">
+                <p class="pillar-index pillar-index-gold">02 · Propósito</p>
+                <h3 class="pillar-title">Conectar pessoas e marcas</h3>
+                <p class="pillar-text">
+                  Construímos pontes visuais entre o que uma marca é por dentro e como ela é
+                  percebida no mundo, combinando estratégia, simplicidade e expressão.
+                </p>
+              </div>
+              <div class="pillar-card">
+                <p class="pillar-index">03 · Especialidades</p>
+                <h3 class="pillar-title">Branding &amp; Ilustração</h3>
+                <p class="pillar-text">
+                  Identidades visuais completas, manuais de marca, design gráfico, design editorial e
+                  ilustrações digitais autorais pensadas para se desdobrar com consistência.
+                </p>
+              </div>
+            </div>
+
+            <!-- Brand Essence & Manual de Marca -->
+            <div class="brand-manual-box">
+              <div class="brand-manual-top">
+                <div class="brand-manual-copy">
+                  <p class="eyebrow-gold">Essência visual · Manual de Marca</p>
+                  <h3 class="brand-manual-title">O símbolo da mão criativa e nossa paleta oficial</h3>
+                  <p class="brand-manual-desc">
+                    Ilustração de logotipo criada digitalmente para o Sketch Studio. O design combina
+                    uma mão em estilo cartoon com a luva utilizada por ilustradores em mesas
+                    digitalizadoras, simbolizando o início do processo criativo e refletindo a
+                    identidade do designer gráfico e ilustrador.
+                  </p>
+                  <div class="pt-sm">
+                    <a
+                      href="./assets/aistudio/Manual_de_Marca_Sketch_Studio_8ccc426b.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="btn btn-gold-outline"
+                    >
+                      <span>Abrir Manual de Marca oficial (PDF)</span>
+                      <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="brand-colors-grid">
+                  <div class="brand-color-card">
+                    <div class="brand-color-chip" style="background-color: #003f3f"></div>
+                    <div class="brand-color-head">
+                      <p class="brand-color-name">Verde Petróleo</p>
+                      <p class="brand-color-hex">#003F3F</p>
+                    </div>
+                    <p class="brand-color-meta">RGB 0 · 63 · 63</p>
+                    <p class="brand-color-meta">CMYK 92 · 47 · 58 · 57</p>
+                  </div>
+                  <div class="brand-color-card">
+                    <div class="brand-color-chip" style="background-color: #d7bc9a"></div>
+                    <div class="brand-color-head">
+                      <p class="brand-color-name">Bege</p>
+                      <p class="brand-color-hex">#D7BC9A</p>
+                    </div>
+                    <p class="brand-color-meta">RGB 215 · 188 · 154</p>
+                    <p class="brand-color-meta">CMYK 16 · 25 · 41 · 4</p>
+                  </div>
+                  <div class="brand-color-card">
+                    <div class="brand-color-chip" style="background-color: #879262"></div>
+                    <div class="brand-color-head">
+                      <p class="brand-color-name">Verde Oliva</p>
+                      <p class="brand-color-hex">#879262</p>
+                    </div>
+                    <p class="brand-color-meta">RGB 135 · 146 · 98</p>
+                    <p class="brand-color-meta">CMYK 50 · 29 · 66 · 13</p>
+                  </div>
+                  <div class="brand-color-card">
+                    <div class="brand-color-chip" style="background-color: #fff9ea"></div>
+                    <div class="brand-color-head">
+                      <p class="brand-color-name">Creme</p>
+                      <p class="brand-color-hex">#FFF9EA</p>
+                    </div>
+                    <p class="brand-color-meta">RGB 255 · 249 · 234</p>
+                    <p class="brand-color-meta">CMYK 0 · 3 · 11 · 0</p>
+                  </div>
+                  <div class="brand-color-card brand-color-card-wide">
+                    <div class="brand-color-chip brand-color-chip-wide" style="background-color: #212121"></div>
+                    <div class="brand-color-wide-info">
+                      <div class="brand-color-head">
+                        <p class="brand-color-name">Preto Grafite</p>
+                        <p class="brand-color-hex">#212121</p>
+                      </div>
+                      <div class="brand-color-wide-meta">
+                        <p class="brand-color-meta">RGB 33 · 33 · 33</p>
+                        <p class="brand-color-meta">CMYK 72 · 66 · 65 · 75</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 4 Official Logos -->
+              <div class="brand-marks-section">
+                <h4 class="brand-marks-title">Variações oficiais de logotipo</h4>
+                <div class="brand-marks-grid">
+                  <div class="brand-mark-card brand-mark-light">
+                    <div class="brand-mark-stage">
+                      <img src="./assets/aistudio/Logo_Princiapl_dd8b985e.png" alt="Logo Principal Sketch Studio" />
+                    </div>
+                    <div class="brand-mark-caption">
+                      <p class="brand-mark-name">Logo Principal</p>
+                      <p class="brand-mark-sub">Versão vertical completa</p>
+                    </div>
+                  </div>
+                  <div class="brand-mark-card brand-mark-light">
+                    <div class="brand-mark-stage">
+                      <img src="./assets/aistudio/Logo_horizontal_29093543.png" alt="Logo Horizontal Sketch Studio" />
+                    </div>
+                    <div class="brand-mark-caption">
+                      <p class="brand-mark-name">Logo Horizontal</p>
+                      <p class="brand-mark-sub">Assinatura horizontal</p>
+                    </div>
+                  </div>
+                  <div class="brand-mark-card brand-mark-dark">
+                    <div class="brand-mark-stage">
+                      <img src="./assets/aistudio/icone_branco_48516b97.png" alt="Ícone com contorno claro Sketch Studio" />
+                    </div>
+                    <div class="brand-mark-caption">
+                      <p class="brand-mark-name">Símbolo (Ícone)</p>
+                      <p class="brand-mark-sub">Versão com contorno claro</p>
+                    </div>
+                  </div>
+                  <div class="brand-mark-card brand-mark-dark">
+                    <div class="brand-mark-stage">
+                      <img src="./assets/aistudio/Sketch_studio_branco_1b8adc15.png" alt="Wordmark Sketch Studio com contorno claro" />
+                    </div>
+                    <div class="brand-mark-caption">
+                      <p class="brand-mark-name">Tipografia (Wordmark)</p>
+                      <p class="brand-mark-sub">Versão com contorno claro</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Values -->
+            <div class="values-block">
+              <h3 class="values-heading">Nossos valores</h3>
+              <div class="values-grid">
+                <div class="value-item value-olive">
+                  <h4>Transparência</h4>
+                  <p>
+                    Comunicação clara em todas as etapas, alinhamento honesto de escopo e
+                    acompanhamento próximo.
+                  </p>
+                </div>
+                <div class="value-item value-dark">
+                  <h4>Cuidado nos detalhes</h4>
+                  <p>
+                    Rigor técnico em cada curva, proporção, alinhamento tipográfico e combinação
+                    cromática.
+                  </p>
+                </div>
+                <div class="value-item value-olive">
+                  <h4>Inovação constante</h4>
+                  <p>
+                    Pesquisa contínua de linguagens visuais contemporâneas sem perder a
+                    atemporalidade da marca.
+                  </p>
+                </div>
+                <div class="value-item value-dark">
+                  <h4>Propósito e essência</h4>
+                  <p>
+                    Entregar o essencial com excelência, evitando excessos decorativos que não
+                    comunicam.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Creative Direction (Murilo) -->
+            <div class="founder-card">
+              <div class="founder-photo-wrap">
+                <img
+                  src="./assets/aistudio/WhatsApp_Image_2026-11-14_at_22.42.29_0625bc34.jpeg"
+                  alt="Murilo — Direção Criativa do Sketch Studio"
+                  class="founder-photo"
+                  loading="lazy"
+                />
+              </div>
+              <div class="founder-info">
+                <p class="eyebrow">Direção criativa · Sketch Studio</p>
+                <h3 class="founder-name">Murilo</h3>
+                <p class="founder-role">
+                  Formado em Design Gráfico · Brand Designer &amp; Ilustrador · 23 anos
+                </p>
+                <p class="founder-bio">
+                  Aos 23 anos, sou formado em Design Gráfico e atuo como Brand Designer e Ilustrador
+                  à frente do Sketch Studio. Minha trajetória começou ainda durante a graduação,
+                  transformando experimentações acadêmicas e projetos práticos em soluções visuais
+                  aplicadas ao mercado real. No estúdio, uno pensamento estratégico em branding,
+                  rigor técnico de design gráfico e linguagem autoral em ilustração digital para
+                  construir marcas com identidade própria, consistência visual e propósito claro.
+                </p>
+
+                <div class="founder-stats">
+                  <div class="founder-stat-box">
+                    <p class="stat-label">Formação</p>
+                    <p class="stat-value">Design Gráfico</p>
+                  </div>
+                  <div class="founder-stat-box">
+                    <p class="stat-label">Atuação</p>
+                    <p class="stat-value">Brand Design &amp; Ilustração</p>
+                  </div>
+                  <div class="founder-stat-box">
+                    <p class="stat-label">Atendimento</p>
+                    <p class="stat-value">Online · Brasil e exterior</p>
+                  </div>
+                </div>
+
+                <div class="founder-actions">
+                  <a href="#contato" class="btn btn-primary" data-scroll-target="contato">
+                    <span>Iniciar um projeto juntos</span>
+                    <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M5 12h14" />
+                      <path d="m12 5 7 7-7 7" />
+                    </svg>
+                  </a>
+                  <a href="#portfolio" class="btn btn-outline" data-scroll-target="portfolio">
+                    Ver portfólio
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact (#contato) -->
+        <section id="contato" class="section-block">
+          <div class="container">
+            <div class="section-intro">
+              <p class="eyebrow">Canais de atendimento</p>
+              <h2 class="section-title">Vamos conversar sobre o seu próximo projeto</h2>
+              <p class="section-desc">
+                Entre em contato diretamente comigo pelo WhatsApp, e-mail ou redes sociais.
+              </p>
+            </div>
+
+            <div class="contact-cards-grid">
+              <a
+                href="https://wa.me/5511952535481?text=Ol%C3%A1%20Sketch%20Studio!%20Vim%20pelo%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="channel-card channel-card-dark"
+              >
+                <div class="channel-icon channel-icon-olive">
+                  <svg class="icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+                  </svg>
+                </div>
+                <div class="channel-copy">
+                  <p class="channel-kicker">WhatsApp</p>
+                  <p class="channel-title">+55 11 95253-5481</p>
+                  <p class="channel-sub">Atendimento direto para novos projetos e orçamentos</p>
+                </div>
+                <svg class="icon-sm channel-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M7 7h10v10" />
+                  <path d="M7 17 17 7" />
+                </svg>
+              </a>
+
+              <a href="mailto:murilomreis.contato@gmail.com" class="channel-card">
+                <div class="channel-icon">
+                  <svg class="icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect width="20" height="16" x="2" y="4" rx="2" />
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                  </svg>
+                </div>
+                <div class="channel-copy">
+                  <p class="channel-kicker channel-kicker-muted">E-mail</p>
+                  <p class="channel-title channel-title-email">murilomreis.contato@gmail.com</p>
+                  <p class="channel-sub">Briefings, propostas e parcerias</p>
+                </div>
+                <svg class="icon-sm channel-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M7 7h10v10" />
+                  <path d="M7 17 17 7" />
+                </svg>
+              </a>
+
+              <div class="channel-card channel-card-static">
+                <div class="channel-icon">
+                  <svg class="icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="12 6 12 12 16 14" />
+                  </svg>
+                </div>
+                <div class="channel-copy">
+                  <p class="channel-kicker channel-kicker-muted">Atendimento</p>
+                  <p class="channel-title">Online · Brasil e exterior</p>
+                  <p class="channel-sub">Segunda a Sexta · 09h às 18h</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-section-block">
+              <div class="social-section-head">
+                <h3 class="social-section-title">Redes sociais</h3>
+                <p class="social-section-sub">Acompanhe ilustrações, estudos de marca e projetos publicados</p>
+              </div>
+
+              <div class="social-cards-grid">
+                <a
+                  href="https://www.instagram.com/mulittle_sketch/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-card"
+                >
+                  <span class="social-card-icon">
+                    <svg class="icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                    </svg>
+                  </span>
+                  <span class="social-card-copy">
+                    <span class="social-card-name">Instagram</span>
+                    <span class="social-card-handle">@mulittle_sketch</span>
+                  </span>
+                  <svg class="icon-sm channel-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M7 7h10v10" />
+                    <path d="M7 17 17 7" />
+                  </svg>
+                </a>
+
+                <a
+                  href="https://www.behance.net/murilo_macedo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-card"
+                >
+                  <span class="social-card-icon">
+                    <svg class="icon-md" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path fill-rule="evenodd" d="M2 6h5.1c2.4 0 3.9 1.1 3.9 3.1 0 1-.5 1.8-1.3 2.2 1.2.6 1.9 1.7 1.9 3.2 0 2.2-1.6 3.5-4.2 3.5H2V6Zm2.4 1.9v2.8h2.5c1.1 0 1.8-.5 1.8-1.4s-.7-1.4-1.8-1.4H4.4Zm0 5v3.2h2.7c1.3 0 2.1-.6 2.1-1.6s-.7-1.6-2-1.6H4.4Z" />
+                      <rect x="15.5" y="6.8" width="5" height="1.5" rx="0.4" />
+                      <path fill-rule="evenodd" d="M18 9.4c-2.6 0-4.4 1.8-4.4 4.4s1.7 4.4 4.5 4.4c2 0 3.4-.9 4-2.4h-2.1c-.4.5-1 .8-1.9.8-1.2 0-2-.7-2.2-1.9h6.4c.1-.3.1-.6.1-.9 0-2.6-1.7-4.4-4.4-4.4Zm-2.1 3.6c.2-1.1 1-1.8 2.1-1.8s1.9.7 2.1 1.8h-4.2Z" />
+                    </svg>
+                  </span>
+                  <span class="social-card-copy">
+                    <span class="social-card-name">Behance</span>
+                    <span class="social-card-handle">behance.net/murilo_macedo</span>
+                  </span>
+                  <svg class="icon-sm channel-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M7 7h10v10" />
+                    <path d="M7 17 17 7" />
+                  </svg>
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/murilodesign/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-card"
+                >
+                  <span class="social-card-icon">
+                    <svg class="icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                      <rect width="4" height="12" x="2" y="9" />
+                      <circle cx="4" cy="4" r="2" />
+                    </svg>
+                  </span>
+                  <span class="social-card-copy">
+                    <span class="social-card-name">LinkedIn</span>
+                    <span class="social-card-handle">/in/murilodesign</span>
+                  </span>
+                  <svg class="icon-sm channel-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M7 7h10v10" />
+                    <path d="M7 17 17 7" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="site-footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-brand-col">
+              <a href="#inicio" class="footer-logo-link" data-scroll-target="inicio">
+                <img
+                  src="./assets/aistudio/icone_branco_48516b97.png"
+                  alt="Sketch Studio"
+                  class="footer-icon"
+                />
+                <span>
+                  <span class="footer-logo-title">Sketch Studio</span>
+                  <span class="footer-logo-sub">illustrator &amp; brand designer</span>
+                </span>
+              </a>
+              <p class="footer-tagline">
+                Estúdio independente de design gráfico especializado em branding, identidade visual,
+                design editorial e ilustração autoral. Transformamos ideias em experiências visuais
+                autênticas.
+              </p>
+              <div class="footer-swatches">
+                <span style="background-color: #003f3f" title="#003F3F"></span>
+                <span style="background-color: #879262" title="#879262"></span>
+                <span style="background-color: #d7bc9a" title="#D7BC9A"></span>
+                <span style="background-color: #fff9ea" title="#FFF9EA"></span>
+                <span style="background-color: #212121" title="#212121"></span>
+              </div>
+            </div>
+
+            <div>
+              <h2 class="footer-heading">Navegação</h2>
+              <ul class="footer-nav-list">
+                <li><a href="#inicio" data-scroll-target="inicio">Início</a></li>
+                <li><a href="#portfolio" data-scroll-target="portfolio">Portfólio</a></li>
+                <li><a href="#sobre" data-scroll-target="sobre">Sobre mim e o estúdio</a></li>
+                <li><a href="#contato" data-scroll-target="contato">Contato</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h2 class="footer-heading">Atendimento e Redes</h2>
+              <div class="footer-contact-links">
+                <a href="mailto:murilomreis.contato@gmail.com">murilomreis.contato@gmail.com</a>
+                <a
+                  href="https://wa.me/5511952535481?text=Ol%C3%A1%20Sketch%20Studio!%20Vim%20pelo%20portf%C3%B3lio%20e%20gostaria%20de%20conversar."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  WhatsApp: +55 11 95253-5481
+                </a>
+              </div>
+              <p class="footer-meta">Atendimento online para todo o Brasil e exterior</p>
+              <p class="footer-meta">Segunda a Sexta · 09h às 18h</p>
+              <div class="footer-social-links">
+                <a
+                  href="https://www.instagram.com/mulittle_sketch/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                  </svg>
+                  <span>Instagram</span>
+                </a>
+                <a
+                  href="https://www.behance.net/murilo_macedo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="icon-xs" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M2 6h5.1c2.4 0 3.9 1.1 3.9 3.1 0 1-.5 1.8-1.3 2.2 1.2.6 1.9 1.7 1.9 3.2 0 2.2-1.6 3.5-4.2 3.5H2V6Zm2.4 1.9v2.8h2.5c1.1 0 1.8-.5 1.8-1.4s-.7-1.4-1.8-1.4H4.4Zm0 5v3.2h2.7c1.3 0 2.1-.6 2.1-1.6s-.7-1.6-2-1.6H4.4Z" />
+                    <rect x="15.5" y="6.8" width="5" height="1.5" rx="0.4" />
+                    <path fill-rule="evenodd" d="M18 9.4c-2.6 0-4.4 1.8-4.4 4.4s1.7 4.4 4.5 4.4c2 0 3.4-.9 4-2.4h-2.1c-.4.5-1 .8-1.9.8-1.2 0-2-.7-2.2-1.9h6.4c.1-.3.1-.6.1-.9 0-2.6-1.7-4.4-4.4-4.4Zm-2.1 3.6c.2-1.1 1-1.8 2.1-1.8s1.9.7 2.1 1.8h-4.2Z" />
+                  </svg>
+                  <span>Behance</span>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/murilodesign/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                    <rect width="4" height="12" x="2" y="9" />
+                    <circle cx="4" cy="4" r="2" />
+                  </svg>
+                  <span>LinkedIn</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <p>© <span id="current-year">2026</span> Sketch Studio. Todos os direitos reservados.</p>
+            <button type="button" class="footer-privacy-btn" data-open-privacy>
+              Política de Privacidade (LGPD)
+            </button>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Floating WhatsApp Link -->
+      <a
+        href="https://wa.me/5511952535481?text=Ol%C3%A1%20Sketch%20Studio!%20Vim%20pelo%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto."
+        target="_blank"
+        rel="noopener noreferrer"
+        id="floating-whatsapp"
+        class="floating-cta"
+        aria-label="Falar no WhatsApp +55 11 95253-5481"
+      >
+        <svg class="icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+        </svg>
+        <span class="floating-cta-label">WhatsApp</span>
+      </a>
+
+      <!-- Project Modal -->
+      <div
+        id="project-modal"
+        class="modal-backdrop"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Detalhes do projeto"
+        hidden
+      >
+        <div id="project-modal-panel" class="modal-card project-modal-card">
+          <div id="project-modal-body"></div>
+        </div>
+      </div>
+
+      <!-- Privacy Modal -->
+      <div
+        id="privacy-modal"
+        class="modal-backdrop"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Política de Privacidade — LGPD"
+        hidden
+      >
+        <div class="modal-card privacy-modal-card">
+          <div class="modal-top-bar">
+            <div class="privacy-title-group">
+              <span class="privacy-badge">
+                <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+                  <path d="m9 12 2 2 4-4" />
+                </svg>
+              </span>
+              <div>
+                <h2>Política de Privacidade</h2>
+                <p>Lei Geral de Proteção de Dados (Lei nº 13.709/2018)</p>
+              </div>
+            </div>
+            <button
+              type="button"
+              id="privacy-close-btn"
+              class="modal-close-btn"
+              aria-label="Fechar política de privacidade"
+            >
+              <svg class="icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 6 6 18" />
+                <path d="m6 6 12 12" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="privacy-sections">
+            <div>
+              <h3>1. Página estática de portfólio</h3>
+              <p>
+                Este site é uma página estática de portfólio do Sketch Studio e não coleta,
+                armazena ou processa dados pessoais em formulários ou servidores externos.
+              </p>
+            </div>
+            <div>
+              <h3>2. Canais diretos de contato</h3>
+              <p>
+                Ao clicar nos botões de WhatsApp (+55 11 95253-5481) ou e-mail, você é direcionado
+                diretamente para o aplicativo escolhido sob sua própria iniciativa para conversar
+                sobre projetos.
+              </p>
+            </div>
+            <div>
+              <h3>3. Preferências locais</h3>
+              <p>
+                A única informação salva no seu navegador é a escolha de tema (modo claro ou escuro),
+                armazenada localmente sem identificação pessoal.
+              </p>
+            </div>
+            <div>
+              <h3>4. Canal de atendimento</h3>
+              <p>
+                Em caso de dúvidas sobre privacidade ou atendimento, entre em contato diretamente pelo
+                e-mail <strong>murilomreis.contato@gmail.com</strong> ou WhatsApp
+                <strong>+55 11 95253-5481</strong>.
+              </p>
+            </div>
+          </div>
+
+          <div class="modal-footer-end">
+            <button type="button" id="privacy-accept-btn" class="btn btn-primary">Entendi</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lightbox Modal -->
+      <div
+        id="lightbox-modal"
+        class="lightbox-backdrop"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Visualização ampliada da imagem"
+        hidden
+      >
+        <div class="lightbox-frame">
+          <div class="lightbox-bar">
+            <span id="lightbox-caption" class="lightbox-caption"></span>
+            <button
+              type="button"
+              id="lightbox-close-btn"
+              class="lightbox-close-btn"
+              aria-label="Fechar visualização ampliada"
+            >
+              <svg class="icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 6 6 18" />
+                <path d="m6 6 12 12" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="lightbox-stage">
+            <img id="lightbox-image" src="" alt="" referrerpolicy="no-referrer" />
+            <button
+              type="button"
+              id="lightbox-prev-btn"
+              class="lightbox-arrow lightbox-prev"
+              aria-label="Imagem anterior"
+            >
+              <svg class="icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="m15 18-6-6 6-6" />
+              </svg>
+            </button>
+            <button
+              type="button"
+              id="lightbox-next-btn"
+              class="lightbox-arrow lightbox-next"
+              aria-label="Próxima imagem"
+            >
+              <svg class="icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="m9 18 6-6-6-6" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./data.js" defer></script>
+    <script src="./logic.js" defer></script>
+    <script src="./app.js" defer></script>
+  </body>
+</html>

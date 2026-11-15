@@ -1,0 +1,6 @@
+{
+  "name": "Sketch Studio",
+  "description": "Estúdio independente de design gráfico especializado em branding, identidade visual e ilustração. Transformamos ideias em experiências visuais autênticas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

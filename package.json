@@ -1,0 +1,12 @@
+{
+  "name": "sketch-studio-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "node -e \"const http=require('http'),fs=require('fs'),path=require('path'),m={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'application/javascript; charset=utf-8','.png':'image/png','.jpg':'image/jpeg','.jpeg':'image/jpeg','.svg':'image/svg+xml','.pdf':'application/pdf','.json':'application/json'};http.createServer((req,res)=>{const u=decodeURIComponent((req.url||'/').split('?')[0]);const p=path.join(process.cwd(),u==='/'?'index.html':u);if(!p.startsWith(process.cwd())||!fs.existsSync(p)||fs.statSync(p).isDirectory()){res.writeHead(404);return res.end('Not found');}res.writeHead(200,{'Content-Type':m[path.extname(p).toLowerCase()]||'application/octet-stream'});fs.createReadStream(p).pipe(res);}).listen(3000,'0.0.0.0',()=>console.log('Static server running on http://0.0.0.0:3000'));\"",
+    "build": "node -e \"const fs=require('fs');fs.rmSync('dist',{recursive:true,force:true});fs.mkdirSync('dist',{recursive:true});for(const f of ['index.html','styles.css','data.js','logic.js','app.js'])fs.copyFileSync(f,'dist/'+f);fs.cpSync('assets','dist/assets',{recursive:true});console.log('Static site copied to dist/');\"",
+    "lint": "node --check data.js && node --check logic.js && node --check app.js",
+    "test": "node --test logic.test.mjs",
+    "clean": "rm -rf dist"
+  }
+}
