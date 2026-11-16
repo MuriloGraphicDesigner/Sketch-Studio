@@ -1669,46 +1669,100 @@ html.dark .founder-role {
 }
 
 /* Contact Layout */
-.contact-cards-grid {
+.contact-hub {
   margin-top: 2.5rem;
   display: grid;
   grid-template-columns: minmax(0, 1fr);
-  gap: 1.25rem;
+  gap: 1.5rem;
   align-items: stretch;
 }
 
-@media (min-width: 640px) {
-  .contact-cards-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .channel-card-static {
-    grid-column: 1 / -1;
+@media (min-width: 1024px) {
+  .contact-hub {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+    gap: 2rem;
   }
 }
 
-@media (min-width: 1024px) {
-  .contact-cards-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1.5rem;
+.contact-direct-panel,
+.contact-social-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 1.25rem;
+  border: 1px solid var(--border);
+  background-color: var(--surface);
+  padding: 1.125rem;
+  min-width: 0;
+}
+
+@media (min-width: 640px) {
+  .contact-direct-panel,
+  .contact-social-panel {
+    padding: 1.5rem;
   }
-  .channel-card-static {
-    grid-column: auto;
+}
+
+.contact-panel-head {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.contact-panel-title {
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.contact-panel-sub {
+  font-size: 0.8125rem;
+  line-height: 1.45;
+  color: var(--text-muted);
+}
+
+.direct-channels-list {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.875rem;
+  flex: 1;
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .direct-channels-list {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
   }
 }
 
 .channel-card {
   display: flex;
   width: 100%;
-  height: 100%;
-  align-items: flex-start;
-  gap: 1rem;
+  align-items: center;
+  gap: 0.75rem;
   border-radius: 1rem;
   border: 1px solid var(--border);
-  background-color: var(--surface);
-  padding: 1.5rem;
+  background-color: var(--bg);
+  padding: 1rem;
   text-align: left;
   cursor: pointer;
   transition: border-color 0.16s ease, transform 0.16s ease;
+}
+
+@media (min-width: 640px) {
+  .channel-card {
+    padding: 1.125rem 1.25rem;
+    gap: 0.875rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .channel-card {
+    padding: 1.25rem 1.375rem;
+    gap: 1rem;
+  }
 }
 
 .channel-card:hover {
@@ -1729,14 +1783,21 @@ html.dark .channel-card-dark {
 
 .channel-icon {
   display: flex;
-  width: 2.75rem;
-  height: 2.75rem;
+  width: 2.625rem;
+  height: 2.625rem;
   flex-shrink: 0;
   align-items: center;
   justify-content: center;
   border-radius: 0.75rem;
   background-color: var(--surface-alt);
   color: var(--text);
+}
+
+@media (min-width: 640px) {
+  .channel-icon {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
 }
 
 .channel-icon-olive {
@@ -1751,8 +1812,14 @@ html.dark .channel-card-dark {
 
 .channel-arrow {
   flex-shrink: 0;
-  margin-top: 0.125rem;
-  opacity: 0.75;
+  opacity: 0.65;
+  transition: transform 0.16s ease, opacity 0.16s ease;
+}
+
+.channel-card:hover .channel-arrow,
+.social-card:hover .channel-arrow {
+  transform: translate(2px, -2px);
+  opacity: 1;
 }
 
 .channel-kicker {
@@ -1766,103 +1833,93 @@ html.dark .channel-card-dark {
 }
 
 .channel-title {
-  margin-top: 0.25rem;
+  margin-top: 0.15rem;
   font-family: var(--font-display);
-  font-size: 0.9375rem;
+  font-size: 1rem;
   font-weight: 700;
-  line-height: 1.35;
+  line-height: 1.3;
   overflow-wrap: break-word;
 }
 
-.channel-card-static {
-  cursor: default;
-}
-
-.channel-card-static:hover {
-  border-color: var(--border);
-  transform: none;
-}
-
 .channel-title-email {
-  font-size: 0.78125rem;
-  letter-spacing: -0.015em;
+  font-size: 0.765rem;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.channel-sub {
-  margin-top: 0.35rem;
-  font-size: 0.8125rem;
-  line-height: 1.5;
-  opacity: 0.82;
-}
-
-.social-section-block {
-  margin-top: 2rem;
-  padding-top: 2rem;
-  border-top: 1px solid var(--border);
-}
-
-.social-section-head {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-}
-
-@media (min-width: 768px) {
-  .social-section-head {
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 1rem;
-  }
-}
-
-.social-section-title {
-  font-family: var(--font-display);
-  font-size: 1.125rem;
-  font-weight: 700;
-}
-
-.social-section-sub {
-  font-size: 0.875rem;
-  color: var(--text-muted);
-}
-
-.social-cards-grid {
-  margin-top: 1.25rem;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: 1rem;
-}
-
-@media (min-width: 640px) {
-  .social-cards-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .social-cards-grid .social-card:last-child {
-    grid-column: 1 / -1;
+@media (min-width: 640px) and (max-width: 1023px) {
+  .channel-title-email {
+    font-size: 0.78125rem;
+    letter-spacing: -0.02em;
   }
 }
 
 @media (min-width: 1024px) {
-  .social-cards-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1.5rem;
+  .channel-title-email {
+    font-size: 0.9375rem;
   }
-  .social-cards-grid .social-card:last-child {
-    grid-column: auto;
-  }
+}
+
+.channel-sub {
+  margin-top: 0.25rem;
+  font-size: 0.8125rem;
+  line-height: 1.45;
+  opacity: 0.82;
+}
+
+.availability-strip {
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.625rem 1.25rem;
+  border-radius: 0.875rem;
+  border: 1px solid var(--border);
+  background-color: var(--bg);
+  padding: 0.875rem 1rem;
+}
+
+.availability-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.availability-item svg {
+  color: var(--accent);
+}
+
+.social-cards-list {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.75rem;
 }
 
 .social-card {
   display: flex;
+  flex: 1;
   min-height: 4.5rem;
   align-items: center;
   gap: 0.875rem;
   border-radius: 1rem;
   border: 1px solid var(--border);
-  background-color: var(--surface);
-  padding: 1rem 1.25rem;
+  background-color: var(--bg);
+  padding: 0.875rem 1rem;
   transition: border-color 0.16s ease, transform 0.16s ease;
+}
+
+@media (min-width: 1024px) {
+  .social-card {
+    padding: 1rem 1.125rem;
+  }
 }
 
 .social-card:hover {
@@ -1872,8 +1929,8 @@ html.dark .channel-card-dark {
 
 .social-card-icon {
   display: flex;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.625rem;
+  height: 2.625rem;
   flex-shrink: 0;
   align-items: center;
   justify-content: center;
@@ -1887,17 +1944,31 @@ html.dark .channel-card-dark {
   flex: 1;
   min-width: 0;
   flex-direction: column;
-  gap: 0.125rem;
+  gap: 0.15rem;
+}
+
+.social-card-top {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
 .social-card-name {
   font-family: var(--font-display);
   font-size: 0.9375rem;
   font-weight: 700;
+  color: var(--text);
+}
+
+.social-card-tag {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  color: var(--accent);
 }
 
 .social-card-handle {
-  font-size: 0.75rem;
+  font-size: 0.78125rem;
   color: var(--text-muted);
   white-space: nowrap;
   overflow: hidden;
