@@ -639,31 +639,45 @@ html.dark .nav-link.is-active::after {
 
 .manifesto-logo-box {
   display: flex;
-  min-height: 12.5rem;
   align-items: center;
   justify-content: center;
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+  padding: 0.25rem 0;
+}
+
+html.dark .manifesto-logo-box {
+  min-height: 14rem;
   border-radius: 1rem;
-  border: 1px solid var(--border);
-  background-color: var(--bg);
-  padding: 1.5rem;
+  border: 1px solid rgba(255, 249, 234, 0.22);
+  background-color: #fff9ea;
+  padding: 1.25rem;
 }
 
 @media (min-width: 768px) {
   .manifesto-logo-box {
-    min-height: 15rem;
-    padding: 2rem;
+    padding: 0;
+  }
+
+  html.dark .manifesto-logo-box {
+    min-height: 18rem;
+    padding: 1.5rem;
   }
 }
 
 .manifesto-logo {
-  max-height: 10.5rem;
-  width: auto;
+  width: 100%;
+  max-width: 19rem;
+  max-height: 17.5rem;
+  height: auto;
   object-fit: contain;
 }
 
 @media (min-width: 768px) {
   .manifesto-logo {
-    max-height: 13rem;
+    max-width: 24rem;
+    max-height: 22rem;
   }
 }
 
@@ -2386,6 +2400,7 @@ html.dark .modal-backdrop {
   font-size: 0.95rem;
   line-height: 1.65;
   color: var(--text-muted);
+  white-space: pre-line;
 }
 
 .palette-aside {

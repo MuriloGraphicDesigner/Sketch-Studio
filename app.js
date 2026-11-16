@@ -622,7 +622,8 @@
             var itemMedia = logic.getProjectMediaPresentation(project, img);
             var isCutWide =
               isCutFilmes &&
-              (img.indexOf('image_673e4dc1.png') !== -1 ||
+              (img.indexOf('cut_films.png') !== -1 ||
+                img.indexOf('image_673e4dc1.png') !== -1 ||
                 img.indexOf('image_340dec8b.png') !== -1);
             var isAdventureWide =
               project.galleryAspect === 'square' &&

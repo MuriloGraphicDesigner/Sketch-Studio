@@ -25,19 +25,19 @@ window.STUDIO_DATA = {
       category: 'Branding',
       year: '2025',
       summary:
-        'Identidade visual e manual de marca para empresa de logística e entregas em todo o país, unindo agilidade e proximidade com o símbolo do gato mensageiro.',
+        'A NekoPack combina agilidade, confiança e proximidade com seus clientes, simbolizados pelo gato – um animal ágil, confiável e carinhoso, inspirada no estilo Studio Ghibli.\n\nAs cores suaves, como tons de azuis e laranja, são escolhidas para trazer segurança e otimismo, enquanto animações leves e ícones delicados criam uma imagem acolhedora e amigável.\n\nA tipografia reforça a personalidade única da marca, tornando a interação no site e app agradável e fácil, além de reduzir velocidade/agilidade.\n\nCom a NekoPack, o cliente não só sente a segurança de suas encomendas sendo entregues com eficiência, mas também a proximidade de uma empresa que se importa e está sempre disponível para apoiar. A marca busca criar uma jornada logística tranquila e personalizada, destacando-se pela atenção aos detalhes e pela experiência acolhedora em cada etapa da entrega.',
       palette: [
         { name: 'Azul Petróleo · Pantone 7701C', hex: '#005677' },
         { name: 'Coral Logístico · Pantone 170C', hex: '#FF8672' },
         { name: 'Azul Médio · Pantone 7704C', hex: '#0083AD' },
         { name: 'Pêssego Suave · Pantone 162C', hex: '#FFBE9F' },
       ],
-      coverImage: './assets/aistudio/image_2bb80afb.png',
+      coverImage: './assets/aistudio/nekopack_cover_hq.jpg',
       coverSurface: 'dark',
       coverFit: 'cover',
       galleryAspect: '16/9',
       gallery: [
-        './assets/aistudio/image_2bb80afb.png',
+        './assets/aistudio/nekopack_cover_hq.jpg',
         './assets/aistudio/image_40316d77.png',
         './assets/aistudio/image_74b192d4.png',
         './assets/aistudio/image_2a7f39d8.png',
@@ -62,7 +62,7 @@ window.STUDIO_DATA = {
       category: 'Editorial',
       year: '2026',
       summary:
-        'Livreto ilustrado inspirado no filme O Pianista (2002), retratando de forma visual e narrativa a trajetória emocional e histórica de Wladyslaw Szpilman na Segunda Guerra Mundial.',
+        'O livreto ilustrado inspirado no filme O Pianista (2002), dirigido por Roman Polanski, tem como objetivo apresentar, de forma visual e narrativa, a trajetória emocional e histórica do pianista judeu Wladyslaw Szpilman durante a Segunda Guerra Mundial. Diferente de uma simples adaptação do filme, o livreto busca transmitir a experiência humana do protagonista por meio de ilustrações, composições visuais e trechos narrativos breves, aproximando o público da sensibilidade da obra.',
       palette: [
         { name: 'Carvão Noturno', hex: '#211B16' },
         { name: 'Sépia Madeira', hex: '#5C402C' },
@@ -117,7 +117,7 @@ window.STUDIO_DATA = {
       category: 'Identidade visual',
       year: '2026',
       summary:
-        'Sistema completo de identidade visual jurídica que funde as iniciais M e S com os símbolos da balança e da espada em um monograma atemporal.',
+        'A identidade visual do escritório Matheus Silva Advocacia foi desenhada para transmitir confiança, seriedade e modernidade.\n\nO símbolo principal é um monograma que une as letras M e S a uma espada, elemento clássico da justiça que representa a firmeza e a defesa dos direitos. A paleta de cores aposta em tons sóbrios e elegantes — como o preto, o off-white, o bordô e detalhes em dourado arenoso —, criando um visual sóbrio sem perder a sofisticação.\n\nCom uma tipografia limpa e clássica, a marca se adapta perfeitamente a todos os materiais do escritório (cartões, documentos, pastas e carimbos), garantindo uma imagem profissional e marcante para os clientes.',
       palette: [
         { name: 'Preto Grafite', hex: '#212121' },
         { name: 'Bordô Institucional', hex: '#42191E' },
@@ -229,17 +229,17 @@ window.STUDIO_DATA = {
       category: 'Identidade visual',
       year: '2026',
       summary:
-        'Projeto de identidade visual para produtora audiovisual que integra um fotograma cinematográfico de película 35mm à tipografia da marca.',
+        'A identidade visual da Cut Filmes adota uma estética cinematográfica clássica em preto e branco. O fundo texturizado e desgastado remete à película antiga, complementado por molduras vintage nos cantos. O logotipo destaca a letra “c” integrada a um fotograma com marcações de contagem regressiva, enquanto o restante da tipografia (“ut filmes”) carrega um acabamento rústico que evoca a projeção de rolos tradicionais.',
       palette: [
         { name: 'Preto Cinema', hex: '#141414' },
         { name: 'Cinza Película', hex: '#7A7A7A' },
         { name: 'Prata Luz', hex: '#E5E5E5' },
       ],
-      coverImage: './assets/aistudio/image_673e4dc1.png',
+      coverImage: './assets/behance/cut_films.png',
       coverSurface: 'dark',
       coverFit: 'cover',
       gallery: [
-        './assets/aistudio/image_673e4dc1.png',
+        './assets/behance/cut_films.png',
         './assets/aistudio/image_340dec8b.png',
         './assets/aistudio/image_565611a8.png',
         './assets/aistudio/image_29d2c4e8.png',
@@ -263,7 +263,7 @@ window.STUDIO_DATA = {
         { name: 'Creme Pergaminho', hex: '#F5E6B3' },
         { name: 'Vermelho Espada', hex: '#B3261E' },
       ],
-      coverImage: './assets/aistudio/image_5171809a.png',
+      coverImage: './assets/aistudio/detetive_cover_hq.png',
       coverSurface: 'dark',
       coverFit: 'cover',
       galleryAspect: 'square',
